@@ -14,7 +14,7 @@ git clone https://github.com/damgambit/react_native-python_flask-sql-with-authen
 cd react_native-python_flask-sql-with-authentication-boilerplate
 pip install -r ./server/requirements.txt
 npm install ./client
-``
+```
 
 # Backend
 ## Configuration
