@@ -1,4 +1,4 @@
-# react-native-python-flask-with-authentication-boilerplate
+# react_native-python_flask-sql-with-authentication-boilerplate
 There are 2 apps in this repository: the backend micro service and the frontend client. The backend is managed by python and flask + any SQL DB. The frontend is built with react-native. There is already implemented the auth service in both sides. 
 There are 2 main pages in a StackNavigator: Login and Register. The state of app is managed by Redux and after a successful login there is a TabNavigator template ready to be filled.
 
@@ -14,7 +14,7 @@ git clone https://github.com/damgambit/react_native-python_flask-sql-with-authen
 cd react_native-python_flask-sql-with-authentication-boilerplate
 pip install -r ./server/requirements.txt
 npm install ./client
-```
+``
 
 # Backend
 ## Configuration
