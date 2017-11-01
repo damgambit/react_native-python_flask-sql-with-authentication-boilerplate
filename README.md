@@ -3,9 +3,9 @@ There are 2 apps in this repository: the backend micro service and the frontend 
 
 # Setup
 ### Prerequisites
-Python >= 2.7
-npm
-React-Native
+- Python >= 2.7
+- npm
+- React-Native
 
 ### What to do
 ```
@@ -13,4 +13,20 @@ git clone https://github.com/damgambit/react_native-python_flask-sql-with-authen
 cd react_native-python_flask-sql-with-authentication-boilerplate
 pip install -r ./server/requirements.txt
 npm install ./client
-```
+``
+
+# Backend
+## Configuration
+- DB connection string in /server/app.py
+- Secret_key in /server/app.py
+- Host:port in /server/app.py
+
+## Start
+python app.py
+
+## API
+| EndPoint                 | Auth&Data                                         | Response                |
+|--------------------------|:-------------------------------------------------:|------------------------:|
+| [POST] /api/users        | data: {username: "", password: ""}                | {user_id: "", token: ""}|
+| [POST] /api/users/signin | basicauth: {username: "", password: ""} username  | {user_id: "", token: ""}|
+| [GET] /api/resource      | auth: {token: ""}								   | "Hello User"            |
